@@ -1,12 +1,15 @@
+import { IonButton, IonItem, IonList } from '@ionic/react';
 import './ExploreContainer.css';
+import ChoiceBtn from './buttons/ChoiceBtn';
 
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <h2>Navegar para:</h2>
+      <ChoiceBtn text="Opção 1" />
+      <ChoiceBtn text="Opção 2" />
     </div>
   );
 };
